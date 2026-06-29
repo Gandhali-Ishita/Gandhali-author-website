@@ -3,6 +3,7 @@ const navLinks = document.querySelector('#navLinks');
 const year = document.querySelector('#year');
 const signupForm = document.querySelector('#signupForm');
 const formNote = document.querySelector('#formNote');
+const revealItems = document.querySelectorAll('.reveal');
 
 year.textContent = new Date().getFullYear();
 
@@ -18,8 +19,23 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14 });
+
+  revealItems.forEach((item) => observer.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('visible'));
+}
+
 signupForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  formNote.textContent = 'Thank you. This demo form works visually, but it needs an email service to save subscribers.';
+  formNote.textContent = 'Thank you. This signup is visual for now. Connect an email service later to save subscribers.';
   signupForm.reset();
 });
