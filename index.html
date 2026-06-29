@@ -3,51 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official author website featuring Love Me in the Chaos, Silk, Sin & Secrets, and future books." />
+  <meta name="description" content="The official author website of Gandhali Ishita, creator of Love Me in the Chaos and Silk, Sin & Secrets." />
+  <meta name="theme-color" content="#07050b" />
   <title>Gandhali Ishita | Official Author Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="page-glow" aria-hidden="true"></div>
+
   <header class="site-header" id="top">
     <nav class="navbar" aria-label="Main navigation">
-      <a class="logo" href="#top">Gandhali Ishita</a>
+      <a class="logo" href="#top" aria-label="Gandhali Ishita home">
+        <span class="logo-mark">GI</span>
+        <span>Gandhali Ishita</span>
+      </a>
+
       <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
-        ☰
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="#books">Books</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#worlds">Worlds</a></li>
+        <li><a href="#about">Author</a></li>
         <li><a href="#updates">Updates</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <section class="hero">
-      <div class="hero-content">
+    <section class="hero" aria-label="Homepage hero">
+      <div class="hero-copy reveal">
         <p class="eyebrow">Official Author Website</p>
-        <h1>Stories of love, danger, secrets, and survival.</h1>
+        <h1>Every scar has a story. Every secret has a price.</h1>
         <p class="hero-text">
-          Home of <strong>Love Me in the Chaos</strong>, <strong>Silk, Sin & Secrets</strong>,
-          and future releases by Gandhali Ishita.
+          Enter the world of <strong>Love Me in the Chaos</strong>, <strong>Silk, Sin & Secrets</strong>,
+          and future releases from Gandhali Ishita — romance, crime, betrayal, survival, and desire written with cinematic intensity.
         </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#books">Explore Books</a>
-          <a class="btn secondary" href="#updates">Get Updates</a>
+          <a class="btn primary" href="#books">Explore the Books</a>
+          <a class="btn secondary" href="#updates">Join Reader Updates</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Author website highlights">
+          <div><strong>2</strong><span>Featured worlds</span></div>
+          <div><strong>∞</strong><span>Future releases</span></div>
+          <div><strong>Free</strong><span>Reader updates</span></div>
+        </div>
+      </div>
+
+      <div class="hero-showcase reveal" aria-label="Featured book display">
+        <div class="showcase-card card-chaos">
+          <span class="book-label">Urban Romance</span>
+          <h2>Love Me in the Chaos</h2>
+          <p>Maria. Javi. Sonia. Love under pressure. Loyalty under fire.</p>
+        </div>
+        <div class="showcase-card card-silk">
+          <span class="book-label">Romance / Crime</span>
+          <h2>Silk, Sin & Secrets</h2>
+          <p>Power, marriage, temptation, and the secret that can destroy everything.</p>
         </div>
       </div>
     </section>
   </header>
 
   <main>
+    <section class="section intro-strip reveal" aria-label="Author brand introduction">
+      <p>
+        Dark romance. Dangerous love. Women with fire. Men with secrets. Stories built for readers who want passion, tension, and consequences.
+      </p>
+    </section>
+
     <section class="section" id="books">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="eyebrow">Featured Books</p>
-        <h2>Books & Series</h2>
-        <p>Add new books any time by copying one book card inside the HTML.</p>
+        <h2>Books that pull you into the danger.</h2>
+        <p>Start with the main worlds below. More titles, samples, release dates, and buy links can be added as each book launches.</p>
       </div>
 
       <div class="book-grid">
-        <article class="book-card">
+        <article class="book-card reveal">
           <div class="book-cover chaos-cover">
             <span>Love Me<br />in the Chaos</span>
           </div>
@@ -55,68 +94,95 @@
             <p class="tag">Urban Romance Series</p>
             <h3>Love Me in the Chaos</h3>
             <p>
-              A raw hood-love story about Maria and Javi, where passion, loyalty,
-              betrayal, and survival collide in the middle of the chaos.
+              A raw hood-love story where Maria and Javi are pulled into loyalty, obsession, betrayal, violence, and a love that refuses to die quietly.
             </p>
-            <a class="text-link" href="#contact">Ask about this book →</a>
+            <div class="book-actions">
+              <a class="text-link" href="#updates">Get release updates</a>
+              <a class="text-link muted-link" href="#worlds">Meet the world</a>
+            </div>
           </div>
         </article>
 
-        <article class="book-card">
+        <article class="book-card reveal">
           <div class="book-cover silk-cover">
             <span>Silk, Sin<br />& Secrets</span>
           </div>
           <div class="book-info">
-            <p class="tag">Romance / Crime Drama</p>
+            <p class="tag">Contemporary Romance / Crime</p>
             <h3>Silk, Sin & Secrets</h3>
             <p>
-              Isabella has power, luxury, and a dangerous secret. Desire pulls her
-              toward Malik while her perfect life begins to crack.
+              Isabella has luxury, status, and a perfect-looking marriage. Then Malik enters the story — and desire becomes the most dangerous secret in the room.
             </p>
-            <a class="text-link" href="#contact">Ask about this book →</a>
+            <div class="book-actions">
+              <a class="text-link" href="#updates">Get release updates</a>
+              <a class="text-link muted-link" href="#worlds">Enter the world</a>
+            </div>
           </div>
         </article>
 
-        <article class="book-card coming-soon">
+        <article class="book-card reveal coming-soon">
           <div class="book-cover future-cover">
-            <span>Future<br />Release</span>
+            <span>Future<br />Releases</span>
           </div>
           <div class="book-info">
             <p class="tag">Coming Soon</p>
-            <h3>More Books Coming</h3>
+            <h3>More Stories Ahead</h3>
             <p>
-              This site is built to grow with every future story, series, cover reveal,
-              launch announcement, and reader update.
+              This website is built to grow with every new series, book cover, launch date, bonus chapter, and reader announcement.
             </p>
-            <a class="text-link" href="#updates">Follow updates →</a>
+            <div class="book-actions">
+              <a class="text-link" href="#updates">Follow updates</a>
+            </div>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="section worlds" id="worlds">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Story Worlds</p>
+        <h2>Romance with teeth. Secrets with consequences.</h2>
+      </div>
+
+      <div class="world-grid">
+        <div class="world-card reveal">
+          <span>01</span>
+          <h3>Love under pressure</h3>
+          <p>Characters are forced to choose between survival, loyalty, and the person they cannot stop loving.</p>
+        </div>
+        <div class="world-card reveal">
+          <span>02</span>
+          <h3>Crime and betrayal</h3>
+          <p>Every decision has a cost. Every secret has a shadow. Every betrayal leaves a mark.</p>
+        </div>
+        <div class="world-card reveal">
+          <span>03</span>
+          <h3>Women with fire</h3>
+          <p>Soft does not mean weak. These women love hard, survive harder, and refuse to disappear.</p>
+        </div>
       </div>
     </section>
 
     <section class="section split" id="about">
-      <div>
+      <div class="reveal">
         <p class="eyebrow">About the Author</p>
         <h2>Gandhali Ishita</h2>
       </div>
-      <div>
+      <div class="author-copy reveal">
         <p>
-          Gandhali Ishita writes emotionally charged romance and crime-driven stories
-          with strong women, dangerous love, spiritual undertones, and characters who
-          fight to survive what life throws at them.
+          Gandhali Ishita writes emotionally charged romance and crime-driven stories with dangerous love, strong women, spiritual undertones, and characters fighting to survive the worlds that shaped them.
         </p>
         <p>
-          Her stories blend passion, pain, loyalty, secrets, betrayal, and the kind of
-          love that refuses to stay quiet.
+          Her storytelling blends passion, pain, loyalty, betrayal, and the kind of love that does not stay quiet — the kind that changes everyone it touches.
         </p>
       </div>
     </section>
 
-    <section class="section updates" id="updates">
-      <div class="section-heading">
+    <section class="section updates reveal" id="updates">
+      <div class="section-heading compact">
         <p class="eyebrow">Reader Updates</p>
-        <h2>Stay Connected</h2>
-        <p>Use this area for release news, preorder links, cover reveals, or launch dates.</p>
+        <h2>Become part of the inner circle.</h2>
+        <p>Get release news, cover reveals, sneak peeks, bonus chapters, and future announcements.</p>
       </div>
 
       <form class="signup-form" id="signupForm">
@@ -125,18 +191,8 @@
           <input type="email" id="email" name="email" placeholder="reader@example.com" required />
           <button class="btn primary" type="submit">Notify Me</button>
         </div>
-        <p class="form-note" id="formNote">Static demo form. Connect Mailchimp, ConvertKit, or another email service later.</p>
+        <p class="form-note" id="formNote">Demo signup only for now. Connect Mailchimp, ConvertKit, or another email service later.</p>
       </form>
-    </section>
-
-    <section class="section contact" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Book inquiries, collaborations, and updates</h2>
-      <p>
-        Replace this text with your preferred email, Facebook page, Instagram, TikTok,
-        Amazon author page, or newsletter link.
-      </p>
-      <a class="btn secondary" href="mailto:your-email@example.com">Email the Author</a>
     </section>
   </main>
 
